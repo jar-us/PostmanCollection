@@ -269,7 +269,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"url\" : \"http://gamma:9003\"\n}"
+									"raw": "{\n\t\"url\" : \"http://api.qrserver.com\"\n}"
 								},
 								"url": {
 									"raw": "{{kong.admin}}/services/:service-name",
