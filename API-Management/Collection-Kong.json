@@ -112,7 +112,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"url\" : \"https://api.qrserver.com\",\n\t\"name\" : \"qr\",\n\t\"retries\" : 3,\n\t\"connect_timeout\" : 60000,\n\t\"write_timeout\" : 60000,\n\t\"read_timeout\" : 60000\n}"
+									"raw": "{\n\t\"url\" : \"https://gamma:9003\",\n\t\"name\" : \"gamma\",\n\t\"retries\" : 3,\n\t\"connect_timeout\" : 60000,\n\t\"write_timeout\" : 60000,\n\t\"read_timeout\" : 60000\n}"
 								},
 								"url": "{{kong.admin}}/services"
 							},
@@ -506,7 +506,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"protocols\": [\n        \"http\",\n        \"https\"\n    ],\n    \"paths\": [\n        \"/qr\"\n    ],\n    \"methods\": []\n}"
+									"raw": "{\n    \"protocols\": [\n        \"http\",\n        \"https\"\n    ],\n    \"paths\": [\n        \"/gamma\"\n    ],\n    \"methods\": []\n}"
 								},
 								"url": {
 									"raw": "{{kong.admin}}/services/:service-name/routes",
@@ -521,7 +521,7 @@
 									"variable": [
 										{
 											"key": "service-name",
-											"value": "qr"
+											"value": "gamma"
 										}
 									]
 								}
