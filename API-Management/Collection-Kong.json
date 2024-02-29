@@ -289,7 +289,84 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "bee71a7d-a4d5-4334-9f1e-5c35938eb7cd",
+									"name": "Service - Update",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\t\"url\" : \"http://gamma:9003\"\n}"
+										},
+										"url": {
+											"raw": "{{kong.admin}}/services/:service-name",
+											"host": [
+												"{{kong.admin}}"
+											],
+											"path": [
+												"services",
+												":service-name"
+											],
+											"variable": [
+												{
+													"id": "4f0e1b0f-ccff-449d-b21c-4205f6cf1e5f",
+													"key": "service-name",
+													"value": "qr"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 29 Feb 2024 16:50:53 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Access-Control-Allow-Credentials",
+											"value": "true"
+										},
+										{
+											"key": "Content-Length",
+											"value": "359"
+										},
+										{
+											"key": "X-Kong-Admin-Latency",
+											"value": "8"
+										},
+										{
+											"key": "Server",
+											"value": "kong/3.5.0"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"created_at\": 1709222958,\n    \"updated_at\": 1709225453,\n    \"client_certificate\": null,\n    \"tls_verify\": null,\n    \"tls_verify_depth\": null,\n    \"connect_timeout\": 60000,\n    \"read_timeout\": 60000,\n    \"path\": null,\n    \"host\": \"gamma\",\n    \"tags\": null,\n    \"ca_certificates\": null,\n    \"name\": \"qr\",\n    \"id\": \"8ac18f4d-ec94-4acb-b735-9639c0c58ae8\",\n    \"enabled\": true,\n    \"write_timeout\": 60000,\n    \"retries\": 3,\n    \"protocol\": \"http\",\n    \"port\": 9003\n}"
+								}
+							]
 						},
 						{
 							"name": "Service - Update by Route",
