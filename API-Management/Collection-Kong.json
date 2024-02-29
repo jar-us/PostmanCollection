@@ -14355,21 +14355,21 @@
 		{
 			"listen": "prerequest",
 			"script": {
+				"id": "7faf0ab7-bd6a-49c2-a082-a7d76fa4e5b0",
 				"type": "text/javascript",
 				"exec": [
 					""
-				],
-				"id": "bc642c7b-c537-49f9-ab67-45e58f5094aa"
+				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
+				"id": "95da6910-84b0-4fa9-b082-5ecef0000e48",
 				"type": "text/javascript",
 				"exec": [
 					""
-				],
-				"id": "13350dbc-e152-46b8-af57-db71aa6cc859"
+				]
 			}
 		}
 	],
